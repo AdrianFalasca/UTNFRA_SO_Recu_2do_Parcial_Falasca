@@ -1,0 +1,382 @@
+2024-07-09 01:06:08,353 p=7437 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:06:08,572 p=7437 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:06:08,585 p=7437 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:06:10,550 p=7437 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:06:10,756 p=7437 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:06:10,805 p=7437 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:06:10,879 p=7437 u=afalasca n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-09 01:06:10,900 p=7437 u=afalasca n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:06:10,907 p=7437 u=afalasca n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:06:10,924 p=7437 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:06:10,993 p=7437 u=afalasca n=ansible | ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to be in '/home/afalasca/UTN-FRA_SO_Examenes/202406_Recu/ansible/roles/Alta_Usuarios_Falasca/tasks/main.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear usuarios y agregar a grupos
+  ^ here
+
+2024-07-09 01:06:10,996 p=7437 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:06:10,997 p=7437 u=afalasca n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:06:10,997 p=7437 u=afalasca n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:11:11,456 p=7791 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:11:11,692 p=7791 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:11:11,706 p=7791 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:11:12,887 p=7791 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:11:13,459 p=7791 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:11:13,488 p=7791 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:11:13,566 p=7791 u=afalasca n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-09 01:11:13,589 p=7791 u=afalasca n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:11:13,604 p=7791 u=afalasca n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:11:13,622 p=7791 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:11:13,689 p=7791 u=afalasca n=ansible | ERROR! conflicting action statements: debug, tasks
+
+The error appears to be in '/home/afalasca/UTN-FRA_SO_Examenes/202406_Recu/ansible/roles/Alta_Usuarios_Falasca/tasks/main.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- debug:
+  ^ here
+
+2024-07-09 01:11:13,691 p=7791 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:11:13,692 p=7791 u=afalasca n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:11:13,692 p=7791 u=afalasca n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:15:20,616 p=8087 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:15:20,814 p=8087 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:15:20,825 p=8087 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:15:22,014 p=8087 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:15:22,695 p=8087 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:15:22,723 p=8087 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:15:22,800 p=8087 u=afalasca n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-09 01:15:22,824 p=8087 u=afalasca n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:15:22,830 p=8087 u=afalasca n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:15:22,846 p=8087 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:15:22,907 p=8087 u=afalasca n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/afalasca/UTN-FRA_SO_Examenes/202406_Recu/ansible/roles/Alta_Usuarios_Falasca/tasks/main.yml': line 9, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: "Rol: Alta_Usuarios_Falasca"
+   debug:
+   ^ here
+
+2024-07-09 01:15:22,908 p=8087 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:15:22,909 p=8087 u=afalasca n=ansible | 127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:15:22,909 p=8087 u=afalasca n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:17:57,458 p=8380 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:17:57,640 p=8380 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:17:57,651 p=8380 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:17:58,883 p=8380 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:17:59,761 p=8380 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:17:59,790 p=8380 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:17:59,867 p=8380 u=afalasca n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-09 01:17:59,889 p=8380 u=afalasca n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:17:59,895 p=8380 u=afalasca n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:17:59,911 p=8380 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:18:00,008 p=8380 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:18:00,402 p=8380 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:18:00,452 p=8380 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:18:00,467 p=8380 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:18:00,732 p=8380 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:18:00,792 p=8380 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:18:00,807 p=8380 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear usuario Profesor] ***********************************************************************************************************************
+2024-07-09 01:18:01,218 p=8380 u=afalasca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:18:01,286 p=8380 u=afalasca n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:18:01,290 p=8380 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:18:01,291 p=8380 u=afalasca n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:18:01,291 p=8380 u=afalasca n=ansible | localhost                  : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:26:40,637 p=8883 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:26:40,829 p=8883 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:26:40,838 p=8883 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:26:41,994 p=8883 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:26:42,742 p=8883 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:26:42,771 p=8883 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:26:42,841 p=8883 u=afalasca n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************************************
+2024-07-09 01:26:42,862 p=8883 u=afalasca n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:26:42,870 p=8883 u=afalasca n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-07-09 01:26:42,886 p=8883 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:26:42,992 p=8883 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:26:43,375 p=8883 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:26:43,399 p=8883 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:26:43,417 p=8883 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:26:43,697 p=8883 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:26:43,735 p=8883 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:26:43,752 p=8883 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear usuario Profesor] ***********************************************************************************************************************
+2024-07-09 01:26:44,222 p=8883 u=afalasca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:26:44,299 p=8883 u=afalasca n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:26:44,300 p=8883 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:26:44,300 p=8883 u=afalasca n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:26:44,301 p=8883 u=afalasca n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:40:28,609 p=9426 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:40:28,790 p=9426 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:40:28,801 p=9426 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:40:30,022 p=9426 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:40:30,616 p=9426 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:40:30,643 p=9426 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:40:30,699 p=9426 u=afalasca n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/afalasca/UTN-FRA_SO_Examenes/202406_Recu/ansible/roles/2PRecuperatorio/tasks/main.yml': line 12, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Crear directorios en /tmp/alumno/datos.txt/"
+^ here
+
+2024-07-09 01:40:30,701 p=9426 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:40:30,702 p=9426 u=afalasca n=ansible | 127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:40:30,702 p=9426 u=afalasca n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:41:33,051 p=9704 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:41:33,238 p=9704 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:41:33,249 p=9704 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:41:34,423 p=9704 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:41:34,944 p=9704 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:41:34,974 p=9704 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:41:35,056 p=9704 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 01:41:35,440 p=9704 u=afalasca n=ansible | changed: [localhost] => (item=alumno)
+2024-07-09 01:41:35,512 p=9704 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 01:41:35,529 p=9704 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 01:41:36,253 p=9704 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:41:36,283 p=9704 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:41:36,303 p=9704 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:41:36,382 p=9704 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:41:36,737 p=9704 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:41:36,773 p=9704 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:41:36,788 p=9704 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:41:37,072 p=9704 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:41:37,137 p=9704 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:41:37,153 p=9704 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear usuario Profesor] ***********************************************************************************************************************
+2024-07-09 01:41:37,648 p=9704 u=afalasca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:41:37,693 p=9704 u=afalasca n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:41:37,695 p=9704 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:41:37,696 p=9704 u=afalasca n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:41:37,696 p=9704 u=afalasca n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:49:38,577 p=10302 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:49:38,761 p=10302 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:49:38,771 p=10302 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:49:39,959 p=10302 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:49:40,564 p=10302 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:49:40,592 p=10302 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:49:40,670 p=10302 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 01:49:41,058 p=10302 u=afalasca n=ansible | changed: [localhost] => (item=alumno)
+2024-07-09 01:49:41,137 p=10302 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 01:49:41,175 p=10302 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 01:49:41,906 p=10302 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:49:41,977 p=10302 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:49:41,990 p=10302 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:49:42,071 p=10302 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:49:42,410 p=10302 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:49:42,481 p=10302 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:49:42,495 p=10302 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:49:42,754 p=10302 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:49:42,818 p=10302 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:49:42,832 p=10302 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta y/o Actualizacion del usuario] ***********************************************************************************************************
+2024-07-09 01:49:43,297 p=10302 u=afalasca n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in Ansible 2.14.
+
+2024-07-09 01:49:43,298 p=10302 u=afalasca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:49:43,352 p=10302 u=afalasca n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:49:43,355 p=10302 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:49:43,355 p=10302 u=afalasca n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:49:43,355 p=10302 u=afalasca n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:50:28,547 p=10896 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:50:28,736 p=10896 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:50:28,748 p=10896 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:50:29,931 p=10896 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:50:29,985 p=10896 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:50:30,018 p=10896 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:50:30,095 p=10896 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 01:50:30,485 p=10896 u=afalasca n=ansible | ok: [localhost] => (item=alumno)
+2024-07-09 01:50:30,543 p=10896 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 01:50:30,562 p=10896 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 01:50:31,293 p=10896 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:50:31,388 p=10896 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:50:31,403 p=10896 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:50:31,484 p=10896 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:50:31,854 p=10896 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:50:31,901 p=10896 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:50:31,916 p=10896 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:50:32,190 p=10896 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:50:32,214 p=10896 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:50:32,229 p=10896 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta y/o Actualizacion del usuario] ***********************************************************************************************************
+2024-07-09 01:50:32,702 p=10896 u=afalasca n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:50:32,775 p=10896 u=afalasca n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "Group GProfesores does not exist"}
+2024-07-09 01:50:32,777 p=10896 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:50:32,778 p=10896 u=afalasca n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:50:32,778 p=10896 u=afalasca n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:52:12,141 p=11424 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:52:12,321 p=11424 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:52:12,332 p=11424 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:52:13,475 p=11424 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:52:14,207 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:14,235 p=11424 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:52:14,314 p=11424 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 01:52:14,691 p=11424 u=afalasca n=ansible | ok: [localhost] => (item=alumno)
+2024-07-09 01:52:14,775 p=11424 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 01:52:14,790 p=11424 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 01:52:15,459 p=11424 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:52:15,527 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:15,540 p=11424 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:52:15,618 p=11424 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:52:15,988 p=11424 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:52:16,017 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:16,033 p=11424 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:52:16,273 p=11424 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:52:16,347 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:16,363 p=11424 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta y/o Actualizacion del usuario] ***********************************************************************************************************
+2024-07-09 01:52:16,905 p=11424 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:52:16,950 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:16,965 p=11424 u=afalasca n=ansible | TASK [include_role : Sudoers_Falasca] ***************************************************************************************************************************************
+2024-07-09 01:52:17,097 p=11424 u=afalasca n=ansible | TASK [Sudoers_Falasca : add NOPASSWD in sudores for group GProfesores] ******************************************************************************************************
+2024-07-09 01:52:17,523 p=11424 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:52:17,595 p=11424 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:52:17,609 p=11424 u=afalasca n=ansible | TASK [include_role : Instala-tools_Falasca] *********************************************************************************************************************************
+2024-07-09 01:52:17,699 p=11424 u=afalasca n=ansible | TASK [Instala-tools_Falasca : Instalar paquetes] ****************************************************************************************************************************
+2024-07-09 01:52:19,259 p=11424 u=afalasca n=ansible | ok: [localhost] => (item=htop)
+2024-07-09 01:52:19,326 p=11424 u=afalasca n=ansible | ok: [127.0.0.1] => (item=htop)
+2024-07-09 01:52:20,218 p=11424 u=afalasca n=ansible | failed: [localhost] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 01:52:20,334 p=11424 u=afalasca n=ansible | failed: [127.0.0.1] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 01:52:21,641 p=11424 u=afalasca n=ansible | ok: [localhost] => (item=tmux)
+2024-07-09 01:52:21,787 p=11424 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tmux)
+2024-07-09 01:52:23,117 p=11424 u=afalasca n=ansible | ok: [localhost] => (item=tree)
+2024-07-09 01:52:23,306 p=11424 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tree)
+2024-07-09 01:52:24,955 p=11424 u=afalasca n=ansible | failed: [127.0.0.1] (item=speedtest-cli) => {"ansible_loop_var": "item", "cache_update_time": 1720478672, "cache_updated": false, "changed": false, "item": "speedtest-cli", "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"      install 'speedtest-cli'' failed: E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 12418 (apt-get)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?\n", "rc": 100, "stderr": "E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 12418 (apt-get)\nE: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?\n", "stderr_lines": ["E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 12418 (apt-get)", "E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?"], "stdout": "", "stdout_lines": []}
+2024-07-09 01:52:29,366 p=11424 u=afalasca n=ansible | changed: [localhost] => (item=speedtest-cli)
+2024-07-09 01:52:29,370 p=11424 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:52:29,370 p=11424 u=afalasca n=ansible | 127.0.0.1                  : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:52:29,371 p=11424 u=afalasca n=ansible | localhost                  : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:57:30,676 p=12548 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 01:57:30,870 p=12548 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 01:57:30,882 p=12548 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 01:57:32,114 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:32,695 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:32,723 p=12548 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 01:57:32,803 p=12548 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 01:57:33,250 p=12548 u=afalasca n=ansible | ok: [localhost] => (item=alumno)
+2024-07-09 01:57:33,270 p=12548 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 01:57:33,287 p=12548 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 01:57:33,951 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:34,008 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:34,022 p=12548 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 01:57:34,103 p=12548 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 01:57:34,478 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:34,526 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:34,541 p=12548 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 01:57:34,787 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:34,861 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:34,875 p=12548 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta del usuario Profesor] ********************************************************************************************************************
+2024-07-09 01:57:35,333 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:35,399 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:35,413 p=12548 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta del usuario alumno] **********************************************************************************************************************
+2024-07-09 01:57:35,742 p=12548 u=afalasca n=ansible | changed: [localhost]
+2024-07-09 01:57:35,763 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:35,779 p=12548 u=afalasca n=ansible | TASK [include_role : Sudoers_Falasca] ***************************************************************************************************************************************
+2024-07-09 01:57:35,868 p=12548 u=afalasca n=ansible | TASK [Sudoers_Falasca : add NOPASSWD in sudores for group GProfesores] ******************************************************************************************************
+2024-07-09 01:57:36,264 p=12548 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 01:57:36,310 p=12548 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 01:57:36,326 p=12548 u=afalasca n=ansible | TASK [include_role : Instala-tools_Falasca] *********************************************************************************************************************************
+2024-07-09 01:57:36,417 p=12548 u=afalasca n=ansible | TASK [Instala-tools_Falasca : Instalar paquetes] ****************************************************************************************************************************
+2024-07-09 01:57:37,788 p=12548 u=afalasca n=ansible | ok: [localhost] => (item=htop)
+2024-07-09 01:57:37,802 p=12548 u=afalasca n=ansible | ok: [127.0.0.1] => (item=htop)
+2024-07-09 01:57:38,638 p=12548 u=afalasca n=ansible | failed: [localhost] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 01:57:38,755 p=12548 u=afalasca n=ansible | failed: [127.0.0.1] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 01:57:39,771 p=12548 u=afalasca n=ansible | ok: [localhost] => (item=tmux)
+2024-07-09 01:57:40,129 p=12548 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tmux)
+2024-07-09 01:57:40,967 p=12548 u=afalasca n=ansible | ok: [localhost] => (item=tree)
+2024-07-09 01:57:41,367 p=12548 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tree)
+2024-07-09 01:57:42,150 p=12548 u=afalasca n=ansible | ok: [localhost] => (item=speedtest-cli)
+2024-07-09 01:57:42,554 p=12548 u=afalasca n=ansible | ok: [127.0.0.1] => (item=speedtest-cli)
+2024-07-09 01:57:42,556 p=12548 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 01:57:42,557 p=12548 u=afalasca n=ansible | 127.0.0.1                  : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 01:57:42,558 p=12548 u=afalasca n=ansible | localhost                  : ok=8    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 02:00:51,227 p=13634 u=afalasca n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-09 02:00:51,418 p=13634 u=afalasca n=ansible | PLAY [all] ******************************************************************************************************************************************************************
+2024-07-09 02:00:51,430 p=13634 u=afalasca n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-07-09 02:00:52,610 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:53,282 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:53,310 p=13634 u=afalasca n=ansible | TASK [include_role : 2PRecuperatorio] ***************************************************************************************************************************************
+2024-07-09 02:00:53,388 p=13634 u=afalasca n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/datos.txt/] ********************************************************************************************************
+2024-07-09 02:00:53,773 p=13634 u=afalasca n=ansible | ok: [localhost] => (item=alumno)
+2024-07-09 02:00:53,872 p=13634 u=afalasca n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-07-09 02:00:53,887 p=13634 u=afalasca n=ansible | TASK [2PRecuperatorio : Agrego archivo desde template] **********************************************************************************************************************
+2024-07-09 02:00:54,600 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:54,667 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:54,682 p=13634 u=afalasca n=ansible | TASK [include_role : Alta_Usuarios_Falasca] *********************************************************************************************************************************
+2024-07-09 02:00:54,760 p=13634 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GProfesores] **********************************************************************************************************************
+2024-07-09 02:00:55,121 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:55,174 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:55,188 p=13634 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Crear grupo GAlumnos] *************************************************************************************************************************
+2024-07-09 02:00:55,433 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:55,507 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:55,522 p=13634 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta del usuario Profesor] ********************************************************************************************************************
+2024-07-09 02:00:55,975 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:56,048 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:56,063 p=13634 u=afalasca n=ansible | TASK [Alta_Usuarios_Falasca : Alta del usuario alumno] **********************************************************************************************************************
+2024-07-09 02:00:56,359 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:56,413 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:56,428 p=13634 u=afalasca n=ansible | TASK [include_role : Sudoers_Falasca] ***************************************************************************************************************************************
+2024-07-09 02:00:56,515 p=13634 u=afalasca n=ansible | TASK [Sudoers_Falasca : add NOPASSWD in sudores for group GProfesores] ******************************************************************************************************
+2024-07-09 02:00:56,890 p=13634 u=afalasca n=ansible | ok: [localhost]
+2024-07-09 02:00:56,920 p=13634 u=afalasca n=ansible | ok: [127.0.0.1]
+2024-07-09 02:00:56,936 p=13634 u=afalasca n=ansible | TASK [include_role : Instala-tools_Falasca] *********************************************************************************************************************************
+2024-07-09 02:00:57,026 p=13634 u=afalasca n=ansible | TASK [Instala-tools_Falasca : Instalar paquetes] ****************************************************************************************************************************
+2024-07-09 02:00:58,362 p=13634 u=afalasca n=ansible | ok: [localhost] => (item=htop)
+2024-07-09 02:00:58,461 p=13634 u=afalasca n=ansible | ok: [127.0.0.1] => (item=htop)
+2024-07-09 02:00:59,193 p=13634 u=afalasca n=ansible | failed: [localhost] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 02:00:59,376 p=13634 u=afalasca n=ansible | failed: [127.0.0.1] (item=script) => {"ansible_loop_var": "item", "changed": false, "item": "script", "msg": "No package matching 'script' is available"}
+2024-07-09 02:01:00,345 p=13634 u=afalasca n=ansible | ok: [localhost] => (item=tmux)
+2024-07-09 02:01:00,714 p=13634 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tmux)
+2024-07-09 02:01:01,523 p=13634 u=afalasca n=ansible | ok: [localhost] => (item=tree)
+2024-07-09 02:01:01,980 p=13634 u=afalasca n=ansible | ok: [127.0.0.1] => (item=tree)
+2024-07-09 02:01:02,670 p=13634 u=afalasca n=ansible | ok: [localhost] => (item=speedtest-cli)
+2024-07-09 02:01:03,189 p=13634 u=afalasca n=ansible | ok: [127.0.0.1] => (item=speedtest-cli)
+2024-07-09 02:01:03,191 p=13634 u=afalasca n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-07-09 02:01:03,192 p=13634 u=afalasca n=ansible | 127.0.0.1                  : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-07-09 02:01:03,192 p=13634 u=afalasca n=ansible | localhost                  : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

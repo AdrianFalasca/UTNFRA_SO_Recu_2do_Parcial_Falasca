@@ -1,0 +1,22 @@
+---
+- hosts: all
+
+  tasks:
+    - include_role:
+        name: 2PRecuperatorio
+    
+    - include_role:
+        name: Alta_Usuarios_Falasca
+
+    - include_role:
+        name: Sudoers_Falasca
+
+    - include_role:
+        name: Instala-tools_Falasca
+
+
+
+    - name: "Otra tarea"
+      debug:
+        msg: "Despues de la ejecucion del rol"
+

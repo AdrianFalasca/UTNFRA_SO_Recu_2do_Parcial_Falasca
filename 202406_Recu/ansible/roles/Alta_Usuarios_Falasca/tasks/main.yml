@@ -1,0 +1,37 @@
+---
+
+# tasks file for Alta_Usuarios_Falasca
+#
+#
+
+
+
+- name: Crear grupo GProfesores
+  become: yes
+  group:
+    name: GProfesores
+    state: present
+
+- name: Crear grupo GAlumnos
+  become: yes
+  group:
+    name: GAlumnos
+    state: present
+
+
+- name: "Alta del usuario Profesor"
+  become: yes
+  user:
+    name: "Profesor"
+    group: "GProfesores"
+    state: present
+
+  
+- name: "Alta del usuario alumno"
+  become: yes
+  user:
+    name: "alumno"
+    group: "GAlumnos"
+    state: present
+
+

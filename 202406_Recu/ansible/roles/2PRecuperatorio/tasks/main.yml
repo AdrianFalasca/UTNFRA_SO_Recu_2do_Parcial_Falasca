@@ -1,0 +1,20 @@
+---
+# tasks file for 2PRecuperatorio
+
+
+
+
+
+- name: "Crear directorios en /tmp/alumno/datos.txt/"
+  file:
+    path: "/tmp/{{ item }}"
+    state: directory
+    mode: '0775'
+    recurse: yes
+  with_items: 
+    - "alumno"
+
+- name: "Agrego archivo desde template"
+  template:
+    src: template_01.j2
+    dest: /tmp/alumno/datos.txt       

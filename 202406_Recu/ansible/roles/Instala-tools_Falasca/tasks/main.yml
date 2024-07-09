@@ -1,0 +1,16 @@
+---
+# tasks file for Instala-tools_Falasca
+#
+#
+
+- name: "Instalar paquetes"
+  become: yes
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - htop
+    - script
+    - tmux
+    - tree  
+    - speedtest-cli  

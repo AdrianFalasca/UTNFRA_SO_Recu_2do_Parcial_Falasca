@@ -1,0 +1,13 @@
+---
+# tasks file for Sudoers_Falasca
+#
+#
+
+- name: "add NOPASSWD in sudores for group GProfesores"
+  become: yes
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%Gprofesores'
+    line: '%GProfesores ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
